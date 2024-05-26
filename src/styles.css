@@ -1,0 +1,85 @@
+/* src/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #3b5998;
+  color: white;
+}
+
+.menu-items h1 {
+  margin: 0;
+}
+
+.user-options button {
+  margin-left: 10px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.add-post textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.add-post button {
+  padding: 10px 20px;
+}
+
+.posts .post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-actions button {
+  margin-right: 10px;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.friend-list input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.friend-list div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.chat-box {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.messages p {
+  margin: 5px 0;
+}
+
+.chat-box input {
+  width: 70%;
+  padding: 5px;
+}
+
+.chat-box button {
+  padding: 5px 10px;
+}

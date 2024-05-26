@@ -1,0 +1,45 @@
+.chat-window {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .friend-list input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .friend-list div {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-box {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .messages p {
+    margin: 5px 0;
+  }
+  
+  .chat-box input {
+    width: 70%;
+    padding: 5px;
+  }
+  
+  .chat-box button {
+    padding: 5px 10px;
+  }
+  
+  .text-area {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }

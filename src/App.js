@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import Feed from './components/Feed';
 import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import ChatWindow from './components/ChatWindow';
 
 function App() {
+
+  const [friends] = useState([{ id: 1, name: 'Alice' }, { id: 2, name: 'Bob' }, { id: 3, name: 'Kory' }, { id: 4, name: 'Jake' }, ]);
+  const [selectedFriend, setSelectedFriend] = useState(null);
+  const [messages, setMessages] = useState({});
+
+  const selectFriend = (friend) => {
+    setSelectedFriend(friend)
+  }
+
+  const sendMessage = (friend, message) => {
+    setMessages({
+      ...messages,
+      [friend.id]: [...(messages[friend.id] || []), message],
+    })
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='app-body'>
+        <Feed/>
+      </div>
+      <ChatWindow
+        friends={friends}
+        selectFriend={selectFriend}
+        selectedFriend={selectedFriend}
+        sendMessage={sendMessage}
+        messages={messages}
+      />
     </div>
-  );
+  )
 }
 
 export default App;
