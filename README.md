@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 Here I have created a Social Media Wall Application with features to post something on your feed, comment, delete. 
 This app also has a chatting option where you can send your messages to friends.
 
